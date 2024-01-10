@@ -1,0 +1,14 @@
+{
+  "targetDefaults": {
+    "build": {
+      "cache": true
+    },
+    "lint": {
+      "cache": true
+    }
+  },
+  "affected": {
+    "defaultBase": "main"
+  },
+  "nxCloudAccessToken": "N2Y1OWQ3MDYtMDA5NS00OTgyLTliNzMtMmNmOWMzZjYxMzI1fHJlYWQtd3JpdGU="
+}

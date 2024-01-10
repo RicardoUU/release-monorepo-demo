@@ -1,0 +1,13 @@
+{
+  "packages": {
+    "apps/onepiece-next": {
+      "release-type": "node"
+    },
+    "libs/is-even": {
+      "release-type": "node"
+    },
+    "libs/is-odd": {
+      "release-type": "node"
+    }
+  }
+}
