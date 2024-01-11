@@ -1,10 +1,12 @@
 name: CI-demo
 
 on:
+  release:
+    types: [published]
   push:
     branches:
       - main
-  pull_request:
+  # pull_request:
 
 # Needed for nx-set-shas within nx-cloud-main.yml, when run on the main branch
 permissions:
