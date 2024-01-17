@@ -15,8 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      // "@myorg/is-odd": ["libs/is-odd/src/index.ts"],
-      "@castlery.com/*": ["libs/*"],
+      "@castlery.com/*": ["libs/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]
