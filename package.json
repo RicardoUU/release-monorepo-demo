@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
+  "packageManager": "pnpm@8.14.1",
   "devDependencies": {
     "@nx/eslint": "17.2.8",
     "@nx/eslint-plugin": "17.2.8",
