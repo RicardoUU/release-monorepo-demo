@@ -2,6 +2,6 @@ import { isOdd } from '../is-odd';
 
 describe('isOdd', () => {
   it('should work', () => {
-    expect(isOdd(1)).toEqual(false);
+    expect(isOdd(1)).toEqual(true);
   });
 });
