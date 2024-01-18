@@ -1,9 +1,11 @@
 {
   "name": "@castlery.com/is-even",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "type": "module",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts",
   "devDependencies": {},
   "scripts": {
-    "build": "tsc index.ts --outDir dist"
+    "build": "tsc -p tsconfig.lib.json"
   }
 }

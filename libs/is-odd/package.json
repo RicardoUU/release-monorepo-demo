@@ -2,10 +2,9 @@
   "name": "@castlery.com/is-odd",
   "version": "1.0.0",
   "dependencies": {
-    "tslib": "^2.3.0",
-    "@castlery.com/is-even": "workspace:*"
+    "@castlery.com/is-even": "*"
   },
-  "type": "commonjs",
+  "type": "module",
   "main": "./src/index.js",
   "typings": "./src/index.d.ts"
 }
