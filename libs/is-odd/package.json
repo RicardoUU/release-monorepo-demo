@@ -1,7 +1,8 @@
 {
   "name": "@castlery.com/is-odd",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "dependencies": {
+    "tslib": "^2.3.0",
     "@castlery.com/is-even": "*"
   },
   "type": "module",

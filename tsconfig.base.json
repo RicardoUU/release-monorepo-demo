@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@castlery.com/*": ["libs/*"],
-      // "@castlery.com/eslint-castlery": ["libs/eslint-castlery/src/index.ts"]
+      "@castlery.com/is-odd": ["libs/is-odd/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

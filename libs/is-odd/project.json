@@ -1,5 +1,5 @@
 {
-  "name": "@castlery.com/is-odd",
+  "name": "is-odd",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/is-odd/src",
   "projectType": "library",
@@ -13,10 +13,6 @@
         "tsConfig": "libs/is-odd/tsconfig.lib.json",
         "assets": ["libs/is-odd/*.md"]
       }
-    },
-    "publish": {
-      "command": "node tools/scripts/publish.mjs is-odd {args.ver} {args.tag}",
-      "dependsOn": ["build"]
     },
     "lint": {
       "executor": "@nx/eslint:lint",
