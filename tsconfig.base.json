@@ -15,8 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@castlery.com/*": ["libs/*"],
-      "@castlery.com/eslint-castlery": ["libs/eslint-castlery/src/index.ts"]
+      "@castlery.com/*": ["libs/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]
