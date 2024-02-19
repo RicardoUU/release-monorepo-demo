@@ -23,7 +23,7 @@ jobs:
       number-of-agents: 3
       artifacts-path: |
         dist/
-        apps/**/.next
+        apps/**/.next/
       artifacts-name: 'build-artifacts'
       init-commands: |
         pnpm exec nx-cloud start-ci-run --stop-agents-after="build" --agent-count=3
