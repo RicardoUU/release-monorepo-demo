@@ -6,7 +6,7 @@ import { requestUsername } from './actions';
 
 function Submit() {
   const { pending } = useFormStatus();
-  console.log('pending', pending);
+  console.log('pending test', pending);
   return (
     <button aria-disabled={pending} type="submit">{pending? 'pending' : 'submit'}</button>
   );
@@ -14,7 +14,7 @@ function Submit() {
 }
 
 export default function Page() {
-  const str = "dasd";
+  const str = "dasdsdada";
   return (
     <>
       <form action={requestUsername} >
