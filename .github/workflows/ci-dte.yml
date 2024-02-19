@@ -22,9 +22,8 @@ jobs:
       main-branch-name: main
       number-of-agents: 3
       artifacts-path: |
-        apps/*/.next/
-        dist/
-        !**/.cache/
+        apps/*/.next/ 
+        !**/.cache/ 
       artifacts-name: 'build-artifacts'
       artifacts-retention-days: 14
       init-commands: |
