@@ -22,9 +22,10 @@ jobs:
       main-branch-name: main
       number-of-agents: 3
       artifacts-path: |
-        dist/
         apps/**/.next/
+        dist/
       artifacts-name: 'build-artifacts'
+      artifacts-retention-days: 14
       init-commands: |
         pnpm exec nx-cloud start-ci-run --stop-agents-after="build" --agent-count=3
       # parallel-commands: |
