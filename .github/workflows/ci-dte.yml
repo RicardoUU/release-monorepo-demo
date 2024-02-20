@@ -30,20 +30,23 @@ jobs:
       artifacts-retention-days: 14
       init-commands: |
         pnpm exec nx-cloud start-ci-run --stop-agents-after="build" --agent-count=3
-      # parallel-commands: |
-      #   pnpm exec nx-cloud record -- pnpm exec nx format:check
-      parallel-commands-on-agents: |
+      parallel-commands: |
+        # pnpm exec nx-cloud record -- pnpm exec nx format:check
         pnpm exec nx affected --target=lint --parallel=3
         pnpm exec nx affected --target=test --parallel=3 --ci --code-coverage
         pnpm exec nx affected --target=build --parallel=3
+      # parallel-commands-on-agents: |
+      #   pnpm exec nx affected --target=lint --parallel=3
+      #   pnpm exec nx affected --target=test --parallel=3 --ci --code-coverage
+      #   pnpm exec nx affected --target=build --parallel=3
       final-commands: |
         ls apps/onepiece-next/
         ls dist/libs/
   
-  agents:
-    name: Nx Cloud - Agents
-    uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.14.0
-    secrets:
-      NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}
-    with:
-      number-of-agents: 3
+  # agents:
+  #   name: Nx Cloud - Agents
+  #   uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.14.0
+  #   secrets:
+  #     NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}
+  #   with:
+  #     number-of-agents: 3
