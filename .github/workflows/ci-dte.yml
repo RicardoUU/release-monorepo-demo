@@ -29,6 +29,9 @@ jobs:
       artifacts-name: 'build-artifacts'
       artifacts-retention-days: 14
       init-commands: |
+        ls apps/onepiece-next/
+        ls dist/libs/
+  
         pnpm exec nx-cloud start-ci-run --stop-agents-after="build" --agent-count=3
       # parallel-commands: |
       #   pnpm exec nx-cloud record -- pnpm exec nx format:check

@@ -6,7 +6,7 @@ import { requestUsername } from './actions';
 
 function Submit() {
   const { pending } = useFormStatus();
-  console.log('pending test', pending);
+  console.log('pending', pending);
   return (
     <button aria-disabled={pending} type="submit">{pending? 'pending' : 'submit'}</button>
   );
