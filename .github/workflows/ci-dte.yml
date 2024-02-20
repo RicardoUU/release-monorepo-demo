@@ -38,6 +38,7 @@ jobs:
         pnpm exec nx affected --target=build --parallel=3
       final-commands: |
         ls apps/onepiece-next/
+        ls dist/libs/
   
   agents:
     name: Nx Cloud - Agents
